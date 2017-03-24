@@ -1,6 +1,6 @@
 FROM node
 
-ADD . /doorman
+COPY . /doorman
 
 RUN \
   cd /doorman && \
@@ -9,4 +9,4 @@ RUN \
 
 WORKDIR /doorman
 
-ENTRYPOINT [ "npm", "start" ]
+ENTRYPOINT ["npm", "start"]
